@@ -3,7 +3,10 @@ class Character < ActiveRecord::Base
   belongs_to :show
 
     def say_that_thing_you_say
-
-      self.name
+      x = []
+      x << self.name
+      x << "always says:"
+      x << self.catchphrase
+      x.join(" ")
     end
 end
