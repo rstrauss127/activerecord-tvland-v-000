@@ -9,9 +9,9 @@ class Actor < ActiveRecord::Base
   def list_roles
 
 x = []
-x << self.characters.first.name 
-x << " - " 
-x << self.shows
-x
+x << self.characters.first.name
+x << "-"
+x << self.shows.name
+x.join(" ")
   end
 end
