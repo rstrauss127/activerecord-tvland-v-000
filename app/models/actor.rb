@@ -11,7 +11,7 @@ class Actor < ActiveRecord::Base
 x = []
 x << self.characters.first.name
 x << "-"
-x << self.show.name
+x << self.shows.name
 x.join(" ")
   end
 end
