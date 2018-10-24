@@ -7,7 +7,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    x = []
-    binding.pry
+self.shows
   end
 end
