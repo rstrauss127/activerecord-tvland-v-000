@@ -8,7 +8,10 @@ class Actor < ActiveRecord::Base
 
   def list_roles
 
-x =  self.characters.first.name + " - " + self.shows
-x.to_s
+x = []
+x << self.characters.first.name 
+x << " - " 
+x << self.shows
+x
   end
 end
